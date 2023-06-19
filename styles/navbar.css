@@ -1,0 +1,183 @@
+/*CSS for Navbar in desktop devices*/
+.navcontainer {
+    display: none;
+    font-size: larger;
+    transform: translateY(-79px);
+    transition: transform .2s ease;
+    position: fixed;
+    width: 100%;
+}
+
+.navcontainer:hover {
+    transform: translateY(0);
+}
+
+.navcontainerlinks {
+    background-color: var(--primary-color);
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-ul li {
+    flex-grow: 1;
+}
+
+.navlink {
+    border-top: 5px solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px 0;
+    color: var(--secondary-color);
+}
+
+.navlink:hover {
+    border-top: 5px solid var(--terciary-complementary);
+}
+
+.navlink.active {
+    border-top: 5px solid var(--terciary-color);
+}
+
+.navlink.active :first-child {
+    color: var(--terciary-color);
+}
+
+.navcontainerflap {
+    display: flex;
+    justify-content: center;
+}
+
+.flap {
+    clip-path: url(#shapeflap);
+    background-color: var(--primary-color);
+    position: relative;
+    display: block;
+    width: 168px;
+    height: 34px;
+    color: transparent;
+}
+
+.flap::after {
+    content: '';
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: var(--secondary-color);
+    transform: translate(-50%, calc(-50% - 4px));
+}
+
+.flap::before {
+    content: '';
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: var(--secondary-color);
+    transform: translate(-50%, calc(-50% + 2px));
+}
+
+/*Breakpoint to show navbar on desktops and hide navbar on tablet and phones*/
+@media only screen and (min-width: 1024px) {
+    .navcontainer {
+        display: block;
+    }
+
+    .navsmall {
+        display: none;
+    }
+}
+
+/*CSS for Navbar in tablets and phones*/
+.navcontainersmall {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 15px 10px;
+    background-color: var(--primary-color);
+    z-index: 10;
+}
+
+.navcontainersmall>div {
+    flex-grow: 1;
+    display: flex;
+}
+
+.hamburgercontainer {
+    justify-content: end;
+}
+
+.hamburgericon {
+    display: inline-block
+}
+
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color: var(--secondary-color);
+    margin-top: 6px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.navcontainerlinkssmall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    transition: 0.4s;
+    transform: translateX(-100%);
+}
+
+.navcontainerlinkssmall a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.navcontainerlinkssmall a :first-child {
+    color: var(--terciary-color);
+}
+
+.navcontainerlinkssmall.show {
+    transform: translateX(0);
+}
+
+/*Breakpoint to change the size hamburger menu on tablets*/
+@media only screen and (min-width: 760px) {
+    .bar {
+        width: 50px;
+        height: 6px;
+    }
+}

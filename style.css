@@ -6,3 +6,11 @@
 body {
     box-sizing: border-box;
 }
+
+:root {
+    --primary-color: rgba(31, 31, 31, 0.852);
+    --secondary-color: aliceblue;
+    --terciary-color: orange;
+    --terciary-complementary: rgba(185, 138, 49, 0.788);
+    --elements-dark: black;
+}
