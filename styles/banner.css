@@ -1,0 +1,85 @@
+/*Style for banner on phones*/
+.bannercontainer {
+    height: 50vh;
+    background-color: #0C1933;
+    position: relative;
+    overflow: hidden;
+}
+
+.bannertext1 {
+    color: rgba(255, 255, 255, 0.521);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 16vw;
+    transform: translate(-50%, -95%);
+}
+
+.bannertext2 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 13vw;
+    transform: translate(-50%, -50%);
+}
+
+.bannertext3 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 3vw;
+    transform: translate(-50%, 150%);
+}
+
+.backgroundimg {
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+/*Breackpoint to modify the background Img on tablet*/
+@media only screen and (min-width: 760px) {
+    .backgroundimg {
+        width: 100%;
+        position: absolute;
+    }
+
+    .bannertext1 {
+        transform: translate(-50%, -95%);
+    }
+
+    .bannertext2 {
+        transform: translate(-50%, -50%);
+    }
+
+    .bannertext3 {
+        transform: translate(-50%, 200%);
+    }
+}
+
+/*Breackpoint to modify the background Img desktop*/
+@media only screen and (min-width: 1024px) {
+    .bannercontainer {
+        height: 100vh;
+        background-color: #0C1933;
+    }
+
+    .backgroundimg {
+        width: 100%;
+        position: absolute;
+    }
+
+    .bannertext1 {
+        transform: translate(-50%, -95%);
+    }
+
+    .bannertext2 {
+        transform: translate(-50%, -50%);
+    }
+
+    .bannertext3 {
+        transform: translate(-50%, 200%);
+    }
+}
