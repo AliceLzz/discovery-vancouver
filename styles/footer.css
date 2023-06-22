@@ -3,12 +3,12 @@
     flex-wrap: wrap;
     padding: 30px;
     color: #2f2f2f;
-    background-color: var(--elements-dark);
+    background-color: var(--primary-color);
     border-top: 1px solid #e5e5e5;
     gap: 48px;
 }
 
-.footer > div {
+.footer>div {
     flex: 1 1 200px;
 }
 
@@ -30,7 +30,7 @@
     list-style: none;
     color: var(--secondary-color);
     gap: 8px;
-}    
+}
 
 a {
     text-decoration: none;
@@ -49,12 +49,12 @@ a:hover {
 
 .footer-text {
     color: var(--secondary-color);
-}    
+}
 
 .copyright {
     text-align: center;
     padding: 30px;
-    background-color: var(--elements-dark);
+    background-color: var(--primary-color);
     color: var(--terciary-color);
 }
 
@@ -68,7 +68,6 @@ a:hover {
     width: 80%;
 }
 
-
 /*Breakpoint to add less space between elements on tablets and desktop*/
 @media only screen and (min-width: 760px) {
     .footer {
@@ -79,9 +78,7 @@ a:hover {
         width: 50%;
     }
 
-
     .socialmedia img {
         width: 64%;
     }
-
-}    
+}
