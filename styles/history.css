@@ -1,0 +1,50 @@
+/*Mobile version of first part of the  main section*/
+    .banner-history {
+        width: 100%;
+    }
+
+    .content-history {
+        padding: 1rem 2rem;
+    }
+
+    .history-title {
+        font-size: 32px;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+
+    .history-text {
+        line-height: 160%;
+        text-align: justify;
+    }
+
+
+
+/*Breakpoint to add less space between elements on tablets*/
+@media only screen and (min-width: 760px) {
+
+    .content-history {
+        padding: 2rem 4rem;
+    }
+
+    .history-title {
+        font-size: 32px;
+    }
+
+}    
+
+/*Breakpoint to add less space between elements on desktop*/
+@media only screen and (min-width: 1024px) {
+
+    
+    .content-history {
+        padding: 4rem 8rem;
+    }
+
+    .history-title {
+        font-size: 48px;
+    }
+}
