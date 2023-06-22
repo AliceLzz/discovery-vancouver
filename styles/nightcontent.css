@@ -164,7 +164,7 @@
         grid-template-areas:
             'bigmsj picture1 title'
             'description picture1 picture2'
-            'review1 review2 picture2';
+            'description review1 review2';
     }
 
     .bigtext {
@@ -177,7 +177,6 @@
         text-transform: uppercase;
         color: #fff;
     }
-
 
     .post2 {
         gap: 12px 32px;
