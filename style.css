@@ -5,15 +5,16 @@
     padding: 0;
 }
 
-body {
-    box-sizing: border-box;
-    font-family: Lato;
-}
-
 :root {
     --primary-color: rgba(31, 31, 31, 0.852);
     --secondary-color: aliceblue;
     --terciary-color: orange;
     --terciary-complementary: rgba(185, 138, 49, 0.788);
     --elements-dark: black;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Lato;
+    background-color: var(--primary-color);
 }
