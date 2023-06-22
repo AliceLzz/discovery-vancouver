@@ -1,0 +1,215 @@
+.night {
+    background-color: #0C1933;
+    color: #ccc;
+    margin-top: 50px;
+}
+
+.night img {
+    width: 100%;
+}
+
+.gridmaincontainer {
+    padding: 0 2%;
+    display: grid;
+    gap: 40px;
+    grid-template-areas:
+        'post1'
+        'post2'
+        'post3';
+}
+
+.post1 {
+    grid-area: post1;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        'bigmsj'
+        'title'
+        'picture1'
+        'description'
+        'review1'
+        'review2';
+}
+
+.bigtext {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.bigtext span {
+    font-size: 72px;
+    font-weight: boder;
+}
+
+.post2 {
+    grid-area: post2;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        'title'
+        'description'
+        'picture1'
+        'review1'
+        'review2';
+}
+
+.post3 {
+    grid-area: post3;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        'title'
+        'description'
+        'picture1'
+        'review1'
+        'review2';
+}
+
+.nightitem1 {
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nightitem2 {
+    grid-area: description;
+    padding: 0 10px;
+}
+
+.nightitem3 {
+    grid-area: picture1;
+}
+
+.nightitem4 {
+    grid-area: picture2;
+    display: none;
+}
+
+.nightitem5 {
+    grid-area: review1;
+}
+
+.nightitem5 p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nightitem5 p span {
+    display: flex;
+}
+
+.gridmaincontainer span img {
+    width: 4vw;
+}
+
+.nightitem6 {
+    grid-area: review2;
+}
+
+.nightitem6 p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nightitem6 p span {
+    display: flex;
+}
+
+.nightitem7 {
+    grid-area: bigmsj;
+}
+
+/*Breackpoint to modify the slide on tablet and bigger devices*/
+@media only screen and (min-width: 760px) {
+    .post1 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            'bigmsj picture1 title'
+            'description picture1 picture2'
+            'review1 review2 picture2';
+    }
+
+    .bigtext {
+        font-size: 30px;
+    }
+
+    .bigtext span {
+        font-size: 50px;
+    }
+
+    .post2 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            'title picture1 picture1'
+            'description picture1 picture1'
+            'picture2 review1 review2';
+    }
+
+    .post3 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            'title picture1 picture1'
+            'description picture1 picture1'
+            'picture2 review1 review2';
+    }
+
+    .nightitem4 {
+        display: block;
+    }
+
+    .gridmaincontainer span img {
+        width: 2vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .gridmaincontainer {
+        padding: 0 10%;
+    }
+
+    .gridmaincontainer span img {
+        width: 2vw;
+    }
+
+    .bigtext {
+        font-size: 50px;
+    }
+
+    .bigtext span {
+        font-size: 70px;
+    }
+
+    .post1 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'bigmsj bigmsj picture1 picture1'
+            'title description picture1 picture1'
+            'picture2 picture2 picture1 picture1'
+            'picture2 picture2 review1 review2 ';
+    }
+
+    .post2 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            'title description picture1 picture1'
+            'picture2 picture2 picture1 picture1'
+            'picture2 picture2 review1 review2 ';
+    }
+
+    .post3 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            'title description review1 review2'
+            'picture1 picture1 picture2 picture2'
+            'picture1 picture1 picture2 picture2'
+        ;
+    }
+}
