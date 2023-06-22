@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Discover Vancouver Night</title>
+        <title>Discover Vancouver</title>
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="./styles/navbar.css" />
         <link rel="stylesheet" href="./styles/banner.css" />
@@ -17,48 +17,36 @@
             <div class="navcontainerlinks">
                 <ul class="nav-ul">
                     <li>
-                        <a
-                            href=""
-                            style="
-                                padding: 15px 0;
-                                display: flex;
-                                justify-content: center;
-                            "
-                        >
-                            <span
-                                style="
-                                    display: block;
-                                    width: 40px;
-                                    height: 40px;
-                                    background-color: orange;
-                                    border: 1px solid black;
-                                "
-                                >Logo</span
-                            >
+                        <a href="index.html" id="logolink">
+                            <img
+                                src="./imgs/logo.png"
+                                alt="Logo"
+                                class="logo"
+                            />
                         </a>
                     </li>
                     <li>
-                        <a href="" class="navlink">
+                        <a href="index.html" class="navlink active">
+                            <span>Home</span>
+                            <span>Vancouver</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/history.html" class="navlink">
+                            <span>History</span>
+                            <span>Vancouver</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/contact.html" class="navlink">
                             <span>Contact us</span>
                             <span>Explore</span>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="navlink active">
-                            <span>Contact us</span>
-                            <span>Explore</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="navlink">
-                            <span>Contact us</span>
-                            <span>Explore</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="navlink">
-                            <span>Contact us</span>
-                            <span>Explore</span>
+                        <a href="./pages/gallery.html" class="navlink">
+                            <span>Gallery</span>
+                            <span>Activities</span>
                         </a>
                     </li>
                 </ul>
@@ -86,15 +74,7 @@
         <nav aria-label="Site menu on small devices" class="navsmall">
             <div class="navcontainersmall">
                 <div>
-                    <span
-                        style="
-                            width: 40px;
-                            height: 40px;
-                            background-color: orange;
-                            border: 1px solid black;
-                        "
-                        >Logo</span
-                    >
+                    <img src="./imgs/logo.png" alt="Logo" class="logo" />
                 </div>
                 <div class="hamburgercontainer">
                     <div class="hamburgericon" onclick="openMenu(this)">
@@ -106,21 +86,21 @@
             </div>
         </nav>
         <div id="menusmall" class="navcontainerlinkssmall">
-            <a href="" class="">
+            <a href="./index.html">
+                <span>Home</span>
+                <span>Vancouver</span>
+            </a>
+            <a href="./pages/history.html">
+                <span>History</span>
+                <span>Vancouver</span>
+            </a>
+            <a href="./pages/contact.html">
                 <span>Contact us</span>
                 <span>Explore</span>
             </a>
-            <a href="" class="">
-                <span>Contact us</span>
-                <span>Explore</span>
-            </a>
-            <a href="" class="">
-                <span>Contact us</span>
-                <span>Explore</span>
-            </a>
-            <a href="" class="">
-                <span>Contact us</span>
-                <span>Explore</span>
+            <a href="./pages/gallery.html">
+                <span>Gallery</span>
+                <span>Activities</span>
             </a>
         </div>
 

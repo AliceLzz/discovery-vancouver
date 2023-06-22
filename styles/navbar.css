@@ -1,4 +1,16 @@
 /*CSS for Navbar in desktop devices*/
+.logo {
+    display: block;
+    width: 40px;
+    height: 40px
+}
+
+#logolink {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
 .navcontainer {
     display: none;
     font-size: larger;
