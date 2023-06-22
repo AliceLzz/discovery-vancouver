@@ -1,8 +1,6 @@
 /*Mobile version of first part of the  main section*/
 .daylife {
     padding: 2rem;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
     margin-top: 50px;
     opacity: .0;
 }

@@ -1,4 +1,5 @@
 .bannergallery {
+    margin-top: 70px;
     width: 100%;
 }
 
@@ -110,5 +111,9 @@
 
     .titlegallery {
         font-size: 48px;
+    }
+
+    .bannergallery {
+        margin-top: 0;
     }
 }

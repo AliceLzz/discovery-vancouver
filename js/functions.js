@@ -6,7 +6,7 @@ function initial() {
     let check = document.getElementById("checkbox");
     check.checked = true;
 }
-function changeMode(item) {
+function changeMode(val) {
     let element = document.getElementById("sliderbg");
     let text = document.getElementById("slidetext");
     let night = document.getElementById("containernight");
@@ -14,7 +14,7 @@ function changeMode(item) {
     let banner = document.getElementById("imageonbanner");
     let time = document.getElementById("time");
     let root = document.querySelector(":root");
-    if (item) {
+    if (val) {
         element.style.setProperty("--bg-bgi", "url('../imgs/moon.svg')");
         element.style.setProperty("--bg-bgico", "#0C1933");
         text.innerHTML = "Go check whats going on BY NIGHT";
@@ -64,7 +64,6 @@ function changeMode(item) {
 window.addEventListener("load", () => {
     const d = new Date();
     let hour = d.getHours();
-    console.log(hour);
     if (hour > 6 && hour < 16) {
         changeMode(true);
         initial();
