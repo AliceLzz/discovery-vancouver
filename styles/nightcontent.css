@@ -1,7 +1,31 @@
 .night {
-    background-color: #0C1933;
-    color: #ccc;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     margin-top: 50px;
+    opacity: .0;
+}
+
+.hidden {
+    display: none;
+}
+
+.night[open] {
+    display: block;
+    animation: fade-in 2s forwards;
+}
+
+.backgroundimg[open] {
+    animation: fade-in 2s forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .night img {
@@ -9,7 +33,7 @@
 }
 
 .gridmaincontainer {
-    padding: 0 2%;
+    padding: 6% 2%;
     display: grid;
     gap: 40px;
     grid-template-areas:
@@ -29,6 +53,7 @@
         'description'
         'review1'
         'review2';
+    border-bottom: outset 1px white;
 }
 
 .bigtext {
@@ -51,6 +76,7 @@
         'picture1'
         'review1'
         'review2';
+    border-bottom: outset 1px white;
 }
 
 .post3 {
@@ -124,7 +150,7 @@
     grid-area: bigmsj;
 }
 
-/*Breackpoint to modify the slide on tablet and bigger devices*/
+/*Breackpoint to modify the slide on tablet*/
 @media only screen and (min-width: 760px) {
     .post1 {
         grid-template-columns: 1fr 1fr 1fr;
@@ -162,6 +188,10 @@
         display: block;
     }
 
+    .gridmaincontainer {
+        padding: 4rem;
+    }
+
     .gridmaincontainer span img {
         width: 2vw;
     }
@@ -169,7 +199,7 @@
 
 @media only screen and (min-width: 1024px) {
     .gridmaincontainer {
-        padding: 0 10%;
+        padding: 10%;
     }
 
     .gridmaincontainer span img {

@@ -1,21 +1,28 @@
 /*Mobile version of first part of the  main section*/
 .daylife {
     padding: 2rem;
-    opacity: 1;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin-top: 50px;
+    opacity: .0;
 }
 
-.item1 { 
-    grid-area: briefing; 
+.daylife[open] {
+    display: block;
+    animation: fade-in 2s forwards;
+}
+
+.item1 {
+    grid-area: briefing;
     font-size: 38px;
-    font-weight:900;
+    font-weight: 900;
     color: #007955;
     line-height: 100%;
     text-transform: uppercase;
 }
 
-
-.item2 { 
-    grid-area: title; 
+.item2 {
+    grid-area: title;
 }
 
 .daylife-title {
@@ -30,8 +37,8 @@
     line-height: 140%;
 }
 
-.item3 { 
-    grid-area: ranking; 
+.item3 {
+    grid-area: ranking;
     display: flex;
     flex-wrap: wrap;
 }
@@ -52,7 +59,7 @@
 }
 
 .stars-icon {
-    display: flex;  
+    display: flex;
     width: 32px;
 }
 
@@ -61,9 +68,8 @@
     width: 108px;
 }
 
-
-.item4 { 
-    grid-area: image; 
+.item4 {
+    grid-area: image;
 }
 
 .grid-container {
@@ -79,7 +85,7 @@
 }
 
 .daylife img {
-    width: 100%;         
+    width: 100%;
 }
 
 /*Mobile version of second part of the  main section*/
@@ -93,7 +99,6 @@
     gap: 24px 48px;
     padding: 16px;
 }
-
 
 /*Mobile version of third part of the  main section*/
 .grid-container-3 {
@@ -109,35 +114,35 @@
 }
 
 .item5 {
-    grid-area: image-2; 
+    grid-area: image-2;
 }
 
 /*Breakpoint to add less space between elements on tablets*/
 @media only screen and (min-width: 760px) {
+
     /*First part of the main section*/
     .daylife {
         padding: 4rem;
     }
 
-    .item1 { 
+    .item1 {
         font-size: 32px;
         margin-right: 0px;
-      }
+    }
 
-
-      .daylife-title {
+    .daylife-title {
         font-size: 24px;
         text-align: left;
     }
-    
+
     .grid-container {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-          'briefing image'
-          'title image'
-          'ranking ranking';
-          margin-bottom: 48px;
-      }
+            'briefing image'
+            'title image'
+            'ranking ranking';
+        margin-bottom: 48px;
+    }
 
     /*Second part of the main section*/
     .grid-container-2 {
@@ -147,7 +152,6 @@
             'ranking ranking';
         margin-bottom: 48px;
     }
-    
 
     /*Third part of the main section*/
     .grid-container-3 {
@@ -158,47 +162,45 @@
             'image-2 ranking';
         margin-bottom: 48px;
     }
-
-}    
+}
 
 /*Breakpoint to add less space between elements on desktop*/
 @media only screen and (min-width: 1024px) {
+
     /*First part of the main section*/
     .daylife {
-        padding: 8rem;
+        padding: 8rem 8rem 0 8rem;
     }
 
     .grid-container {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-          'briefing image'
-          'title image'
-          'ranking image';
-          margin-bottom: 120px;
-      }
+            'briefing image'
+            'title image'
+            'ranking image';
+        margin-bottom: 120px;
+    }
 
-      .item1 { 
+    .item1 {
         font-size: 60px;
         margin-right: 180px;
         text-transform: uppercase;
         position: relative;
-      }
+    }
 
-
-      .daylife-title {
+    .daylife-title {
         font-size: 48px;
         text-align: right;
     }
 
-        #align-left {
-            text-align: left;
-        }
+    #align-left {
+        text-align: left;
+    }
 
-      .daylife-text {
+    .daylife-text {
         line-height: 160%;
         text-align: justify;
     }
-
 
     /*Second part of the main section*/
     .grid-container-2 {
@@ -212,7 +214,7 @@
     #margin-bottom {
         margin-bottom: -4%;
     }
-    
+
     /*Third part of the main section*/
     .grid-container-3 {
         grid-template-columns: 1fr 1fr;
@@ -220,7 +222,6 @@
             'title image'
             'image-2 image'
             'image-2 ranking';
-            margin-bottom: 120px;
+        margin-bottom: 120px;
     }
-
 }
