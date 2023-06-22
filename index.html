@@ -4,10 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Discover Vancouver Night</title>
-        <link rel="stylesheet" href="../style.css" />
-        <link rel="stylesheet" href="../styles/navbar.css" />
-        <link rel="stylesheet" href="../styles/footer.css" />
-        <script src="../js/functions.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./styles/navbar.css" />
+        <link rel="stylesheet" href="./styles/banner.css" />
+        <link rel="stylesheet" href="./styles/nightcontent.css" />
+        <link rel="stylesheet" href="./styles/footer.css" />
+        <link rel="stylesheet" href="./styles/daylife.css" />
+        <script src="./js/functions.js"></script>
     </head>
     <body>
         <nav class="navcontainer" aria-label="Site menu on desktops">
@@ -120,6 +123,635 @@
                 <span>Explore</span>
             </a>
         </div>
-        <div style="height: 200vh"></div>
+
+        <main>
+            <section class="bannercontainer">
+                <img
+                    class="backgroundimg"
+                    src="imgs/vancouvernight.jpg"
+                    alt="Canada place in Vancouver"
+                    id="imageonbanner"
+                />
+                <h1 class="bannertext1">DISCOVER</h1>
+                <h1 class="bannertext2">VANCOUVER</h1>
+                <h3 class="bannertext3" id="time">BY NIGHT</h3>
+                <div class="slidecontainer">
+                    <!-- Rounded switch -->
+                    <label class="switch">
+                        <input
+                            type="checkbox"
+                            onchange="changeMode(this.checked)"
+                            id="checkbox"
+                        />
+                        <span class="slider round" id="sliderbg"></span>
+                        <span class="slidertext" id="slidetext"
+                            >Go check whats going on AT NIGHT</span
+                        >
+                    </label>
+                </div>
+            </section>
+            <section class="night" id="containernight">
+                <div class="gridmaincontainer">
+                    <div class="post1">
+                        <div class="nightitem1"><h1>Gastown</h1></div>
+                        <div class="nightitem2">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Ex expedita voluptatem quod
+                                tempora. Dolore minima quis alias laborum soluta
+                                iusto deserunt inventore! Veniam, neque.
+                                Architecto, inventore asperiores! Beatae,
+                                doloribus laudantium!
+                            </p>
+                        </div>
+                        <div class="nightitem3">
+                            <img src="imgs/gastown3.jpg" alt="Gastown clock" />
+                        </div>
+                        <div class="nightitem4">
+                            <img
+                                src="imgs/gastown2.jpg"
+                                alt="Street on Gastown"
+                            />
+                        </div>
+                        <div class="nightitem5">
+                            <p>
+                                Price
+                                <span> FREE </span>
+                            </p>
+                            <p>
+                                Adventure
+                                <span>
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star.svg" alt="star" />
+                                </span>
+                            </p>
+                            <p>
+                                Comfort
+                                <span>
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star.svg" alt="star" />
+                                </span>
+                            </p>
+                        </div>
+                        <div class="nightitem6">
+                            <p>
+                                Gastronomy
+                                <span>
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star.svg" alt="star" />
+                                </span>
+                            </p>
+                            <p>
+                                Culture
+                                <span>
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                </span>
+                            </p>
+                            <p>
+                                Entertaiment
+                                <span>
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                </span>
+                            </p>
+                        </div>
+                        <div class="nightitem7">
+                            <p class="bigtext">
+                                Let's go party in <span>Vancouver</span> at
+                                Night
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post2">
+                        <div class="nightitem1"><h1>Night Market</h1></div>
+                        <div class="nightitem2">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Ex expedita voluptatem quod
+                                tempora. Dolore minima quis alias laborum soluta
+                                iusto deserunt inventore! Veniam, neque.
+                                Architecto, inventore asperiores! Beatae,
+                                doloribus laudantium!
+                            </p>
+                        </div>
+                        <div class="nightitem3">
+                            <img
+                                src="imgs/nightmarket2.jpg"
+                                alt="night Market on Richmont"
+                            />
+                        </div>
+                        <div class="nightitem4">
+                            <img
+                                src="imgs/nightmarket.jpg"
+                                alt="night Market on Richmont"
+                            />
+                        </div>
+                        <div class="nightitem5">
+                            <p>
+                                Price
+                                <span> $ </span>
+                            </p>
+                            <p>
+                                Adventure
+                                <span>
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star.svg" alt="star" />
+                                    <img src="imgs/star.svg" alt="star" />
+                                </span>
+                            </p>
+                            <p>
+                                Comfort
+                                <span>
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star.svg" alt="star" />
+                                </span>
+                            </p>
+                        </div>
+                        <div class="nightitem6">
+                            <p>
+                                Gastronomy
+                                <span>
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                </span>
+                            </p>
+                            <p>
+                                Culture
+                                <span>
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star.svg" alt="star" />
+                                </span>
+                            </p>
+                            <p>
+                                Entertaiment
+                                <span>
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post3">
+                        <div class="nightitem1"><h1>Score at David St</h1></div>
+                        <div class="nightitem2">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Ex expedita voluptatem quod
+                                tempora. Dolore minima quis alias laborum soluta
+                                iusto deserunt inventore! Veniam, neque.
+                                Architecto, inventore asperiores! Beatae,
+                                doloribus laudantium!
+                            </p>
+                        </div>
+                        <div class="nightitem3">
+                            <img src="imgs/scoredavid.jpg" alt="Score bar" />
+                        </div>
+                        <div class="nightitem4">
+                            <img src="imgs/scoredavie2.jpg" alt="Score bar" />
+                        </div>
+                        <div class="nightitem5">
+                            <p>
+                                Price
+                                <span> $$ </span>
+                            </p>
+                            <p>
+                                Adventure
+                                <span>
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star.svg" alt="star" />
+                                </span>
+                            </p>
+                            <p>
+                                Comfort
+                                <span>
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star.svg" alt="star" />
+                                </span>
+                            </p>
+                        </div>
+                        <div class="nightitem6">
+                            <p>
+                                Gastronomy
+                                <span>
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                </span>
+                            </p>
+                            <p>
+                                Culture
+                                <span>
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star.svg" alt="star" />
+                                    <img src="imgs/star.svg" alt="star" />
+                                    <img src="imgs/star.svg" alt="star" />
+                                    <img src="imgs/star.svg" alt="star" />
+                                </span>
+                            </p>
+                            <p>
+                                Entertaiment
+                                <span>
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                    <img src="imgs/star-shine.svg" alt="star" />
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="daylife" id="containerday">
+                <!-- First part - English Bay-->
+                <div class="grid-container">
+                    <div class="item1">
+                        Discover all that Vancouver has to show you!
+                    </div>
+                    <div class="item2">
+                        <h1 class="daylife-title">English Bay</h1>
+                        <p class="daylife-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Etiam porta dapibus ex, id tempus lectus
+                            dapibus et. Suspendisse vitae mattis metus, sit amet
+                            tempor lorem. Aliquam lacinia ornare imperdiet.
+                            Etiam efficitur ornare quam in varius.
+                        </p>
+                    </div>
+                    <div class="item3">
+                        <div class="ranking-box-1">
+                            <div class="stars">
+                                <p class="stars-text">Price</p>
+                                <div class="stars-icon">
+                                    <p class="stars-text">FREE</p>
+                                </div>
+                            </div>
+
+                            <div class="stars">
+                                <p class="stars-text">Adventure</p>
+                                <div class="stars-icon">
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <p class="stars-text">Comfort</p>
+                                <div class="stars-icon">
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ranking-box-2">
+                            <div class="stars">
+                                <p class="stars-text">Gastronomy</p>
+                                <div class="stars-icon">
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                </div>
+                            </div>
+
+                            <div class="stars">
+                                <p class="stars-text">Culture</p>
+                                <div class="stars-icon">
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <p class="stars-text">Entertainment</p>
+                                <div class="stars-icon">
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item4">
+                        <img
+                            src="imgs/english-bay.jpg"
+                            alt="Canada place in Vancouver"
+                        />
+                    </div>
+                </div>
+                <!-- Second part - Deep Cove-->
+                <div class="grid-container-2">
+                    <div class="item4">
+                        <img
+                            src="imgs/deep-cove.jpg"
+                            alt="Canada place in Vancouver"
+                        />
+                    </div>
+                    <div class="item2">
+                        <h1 id="align-left" class="daylife-title">Deep Cove</h1>
+                        <p class="daylife-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Etiam porta dapibus ex, id tempus lectus
+                            dapibus et. Suspendisse vitae mattis metus, sit amet
+                            tempor lorem. Aliquam lacinia ornare imperdiet.
+                            Etiam efficitur ornare quam in varius. Proin ligula
+                            turpis, lobortis vel velit sed, tincidunt lacinia
+                            arcu. Cras a sem metus.
+                        </p>
+                    </div>
+                    <div class="item3">
+                        <div id="margin-bottom" class="ranking-box-1">
+                            <div class="stars">
+                                <p class="stars-text">Price</p>
+                                <div class="stars-icon">
+                                    <p class="stars-text">$$</p>
+                                </div>
+                            </div>
+
+                            <div class="stars">
+                                <p class="stars-text">Adventure</p>
+                                <div class="stars-icon">
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <p class="stars-text">Comfort</p>
+                                <div class="stars-icon">
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ranking-box-2">
+                            <div class="stars">
+                                <p class="stars-text">Gastronomy</p>
+                                <div class="stars-icon">
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                </div>
+                            </div>
+
+                            <div class="stars">
+                                <p class="stars-text">Culture</p>
+                                <div class="stars-icon">
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <p class="stars-text">Entertainment</p>
+                                <div class="stars-icon">
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third part - Stanley Park-->
+                <div class="grid-container-3">
+                    <div class="item2">
+                        <h1 class="daylife-title">Stanley Park</h1>
+                        <p class="daylife-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Etiam porta dapibus ex, id tempus lectus
+                            dapibus et. Suspendisse vitae mattis metus, sit amet
+                            tempor lorem. Aliquam lacinia ornare imperdiet.
+                            Etiam efficitur ornare quam in varius. Proin ligula
+                            turpis, lobortis vel velit sed, tincidunt lacinia
+                            arcu. Cras a sem metus.
+                        </p>
+                    </div>
+                    <div class="item4">
+                        <img
+                            src="imgs/stanley-park-skyline.jpg"
+                            alt="Canada place in Vancouver"
+                        />
+                    </div>
+                    <div class="item5">
+                        <img
+                            src="imgs/stanley-park.jpg"
+                            alt="Canada place in Vancouver"
+                        />
+                    </div>
+                    <div class="item3">
+                        <div class="ranking-box-1">
+                            <div class="stars">
+                                <p class="stars-text">Price</p>
+                                <div class="stars-icon">
+                                    <p class="stars-text">FREE</p>
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <p class="stars-text">Adventure</p>
+                                <div class="stars-icon">
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <p class="stars-text">Comfort</p>
+                                <div class="stars-icon">
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ranking-box-2">
+                            <div class="stars">
+                                <p class="stars-text">Gastronomy</p>
+                                <div class="stars-icon">
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                </div>
+                            </div>
+
+                            <div class="stars">
+                                <p class="stars-text">Culture</p>
+                                <div class="stars-icon">
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <p class="stars-text">Entertainment</p>
+                                <div class="stars-icon">
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star-shine.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                    <img src="imgs/star.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-logo">
+                <img src=" " class="footer-logo" alt="" />
+                <h2 class="footer-title">Let's Talk?</h2>
+                <p class="footer-text">Somewhere In The World</p>
+                <ul class="socialmedia">
+                    <li>
+                        <a href="#"
+                            ><img src="imgs/facebook.svg" alt="facebook logo"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img src="imgs/insta.svg" alt="instagram logo"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img src="imgs/pinterest.svg" alt="pinterest logo"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img src="imgs/youtube.svg" alt="pinterest logo"
+                        /></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2 class="footer-title">Day Life</h2>
+
+                <ul class="footer-ul">
+                    <li>
+                        <a href="#">Lorem Ipsum</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Lorem Ipsum</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Lorem Ipsum</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2 class="footer-title">Night Life</h2>
+
+                <ul class="footer-ul">
+                    <li>
+                        <a href="#">Lorem Ipsum</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Lorem Ipsum</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Lorem Ipsum</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2 class="footer-title">More Info</h2>
+
+                <ul class="footer-ul">
+                    <li>
+                        <a href="#">History</a>
+                    </li>
+
+                    <li>
+                        <a href="#">World Map</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <div class="copyright">
+            <p>Discover Vancouver 2023. All rights reserved.</p>
+        </div>
     </body>
 </html>
