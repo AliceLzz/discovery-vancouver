@@ -43,7 +43,8 @@
 .post1 {
     grid-area: post1;
     display: grid;
-    gap: 10px;
+    gap: 24px 48px;
+    padding: 16px;
     grid-template-areas:
         'bigmsj'
         'title'
@@ -55,19 +56,24 @@
 }
 
 .bigtext {
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffa500;
 }
 
-.bigtext span {
-    font-size: 72px;
-    font-weight: boder;
+.tile-nightlife {
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
 }
 
 .post2 {
     grid-area: post2;
     display: grid;
-    gap: 10px;
+    gap: 24px 48px;
+    padding: 16px;
     grid-template-areas:
         'title'
         'description'
@@ -80,7 +86,8 @@
 .post3 {
     grid-area: post3;
     display: grid;
-    gap: 10px;
+    gap: 24px 48px;
+    padding: 16px;
     grid-template-areas:
         'title'
         'description'
@@ -151,6 +158,8 @@
 /*Breackpoint to modify the slide on tablet*/
 @media only screen and (min-width: 760px) {
     .post1 {
+        gap: 12px 32px;
+        padding: 8px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
             'bigmsj picture1 title'
@@ -159,14 +168,20 @@
     }
 
     .bigtext {
-        font-size: 30px;
+        font-size: 32px;
     }
 
-    .bigtext span {
-        font-size: 50px;
+    .tile-nightlife {
+        font-size: 28px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #fff;
     }
+
 
     .post2 {
+        gap: 12px 32px;
+        padding: 8px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
             'title picture1 picture1'
@@ -175,6 +190,8 @@
     }
 
     .post3 {
+        gap: 12px 32px;
+        padding: 8px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
             'title picture1 picture1'
@@ -205,11 +222,14 @@
     }
 
     .bigtext {
-        font-size: 50px;
+        font-size: 62px;
     }
 
-    .bigtext span {
-        font-size: 70px;
+    .tile-nightlife {
+        font-size: 48px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #fff;
     }
 
     .post1 {
