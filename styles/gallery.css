@@ -1,0 +1,114 @@
+.bannergallery {
+    width: 100%;
+}
+
+.grillgallery img {
+    width: 100%;
+}
+
+.grillgallery img:hover {
+    transform: scale(1.05);
+    transition: 500ms;
+}
+
+.titlegallery {
+    font-size: 32px;
+    text-align: center;
+    margin: 2rem 0;
+    text-transform: uppercase;
+}
+
+.grillgallery {
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+        'picturegallery1'
+        'picturegallery2'
+        'picturegallery3'
+        'picturegallery4'
+        'picturegallery5'
+        'picturegallery6'
+        'picturegallery7'
+        'picturegallery8'
+        'picturegallery10';
+}
+
+.postgallery1 {
+    grid-area: picturegallery1;
+}
+
+.postgallery2 {
+    grid-area: picturegallery2;
+}
+
+.postgallery3 {
+    grid-area: picturegallery3;
+}
+
+.postgallery4 {
+    grid-area: picturegallery4;
+}
+
+.postgallery5 {
+    grid-area: picturegallery5;
+}
+
+.postgallery6 {
+    grid-area: picturegallery6;
+}
+
+.postgallery7 {
+    grid-area: picturegallery7;
+}
+
+.postgallery8 {
+    grid-area: picturegallery8;
+}
+
+.postgallery9 {
+    grid-area: picturegallery9;
+    display: none;
+}
+
+.postgallery10 {
+    grid-area: picturegallery10;
+}
+
+/*Break point for tablets*/
+@media only screen and (min-width: 760px) {
+    .grillgallery {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            'picturegallery4 picturegallery2 picturegallery3'
+            'picturegallery1 picturegallery5 picturegallery6 '
+            'picturegallery7 picturegallery8 picturegallery10'
+        ;
+    }
+}
+
+/*Break point for desktop*/
+@media only screen and (min-width: 1024px) {
+    .postgallery9 {
+        display: block;
+    }
+
+    .grillgallery {
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            'picturegallery1 picturegallery1 picturegallery2 picturegallery3'
+            'picturegallery1 picturegallery1 picturegallery4 picturegallery4 '
+            'picturegallery5 picturegallery6 picturegallery4 picturegallery4'
+            'picturegallery9 picturegallery7 picturegallery10 picturegallery10'
+            'picturegallery9 picturegallery8 picturegallery10 picturegallery10'
+        ;
+    }
+
+    .titlegallery {
+        font-size: 48px;
+    }
+}
