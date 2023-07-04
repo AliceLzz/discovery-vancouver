@@ -36,6 +36,7 @@ function changeMode(val) {
         root.style.setProperty("--secondary-color", "#0C1933");
         root.style.setProperty("--terciary-color", "#007955");
         root.style.setProperty("--terciary-complementary", "#266451c5");
+        sessionStorage.setItem("time", "Day");
     } else {
         element.style.setProperty("--bg-bgi", "url('../imgs/sun.svg')");
         element.style.setProperty("--bg-bgico", "#ccc");
@@ -58,6 +59,7 @@ function changeMode(val) {
         root.style.setProperty("--secondary-color", "white");
         root.style.setProperty("--terciary-color", "orange");
         root.style.setProperty("--terciary-complementary", "#d59621d5");
+        sessionStorage.setItem("time", "Night");
     }
 }
 

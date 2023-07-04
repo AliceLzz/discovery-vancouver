@@ -162,6 +162,7 @@ input:checked+.slider:before {
     left: 15%;
     font-size: .5rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /*Breackpoint to modify the slide on tablet and bigger devices*/

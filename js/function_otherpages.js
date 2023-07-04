@@ -18,9 +18,7 @@ function changeMode(val) {
 }
 
 window.addEventListener("load", () => {
-    const d = new Date();
-    let hour = d.getHours();
-    if (hour > 6 && hour < 16) {
+    if (sessionStorage.getItem("time") == "Day") {
         changeMode(true);
     } else {
         changeMode(false);
